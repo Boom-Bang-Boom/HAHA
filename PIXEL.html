@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('https://mobimg.b-cdn.net/v3/fetch/6b/6b58c7099c63763084a5ebc77ed57596.jpeg?h=900&r=0.5');
+            background-size: 100% ;
+        }
+
+        table{
+            margin-left: 20%;
+        }
+
+        td{
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 50px;
+            width: 50px;
+        }
+
+        #color_b{
+            margin-top: 20px;
+            margin-left: 34%;
+        }
+
+        #red{
+            background-color: red;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #orangered{
+            background-color: orangered;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #orange{
+            background-color: orange;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #yellow{
+            background-color: yellow;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #greenyellow{
+            background-color: greenyellow;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #yellowgreen{
+            background-color: yellowgreen;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #green{
+            background-color: green;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #green_blue{
+            background-color: lightgreen;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #aqua{
+            background-color: aqua;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #blue{
+            background-color: blue;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #dark_blue{
+            background-color: darkblue;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #purple{
+            background-color: purple;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #pink{
+            background-color: pink;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #black{
+            background-color: black;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #white{
+            background-color: white;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #gray{
+            background-color: gray;
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        #erase{
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 30px;
+            border-radius: 100px;
+            height: 30px;
+            border: 0px;
+        }
+
+        .highlight {
+         background: red;
+        }
+
+        #vis_t{
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 52px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        #shir_t{
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 45px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        #shirina{
+            border-radius: 100px;
+            border: 0px;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 200px;
+            height: 20px;
+        }
+
+        #visota{
+            border-radius: 100px;
+            border: 0px;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 200px;
+            height: 20px;
+        }
+
+        #start{
+            border-radius: 100px;
+            border: 0px;
+            background-color: rgba(255, 255, 255, 0);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 40px;
+            margin-left: 46%;
+            margin-top: 20px;
+        }
+
+        #razmer{
+            margin-left: 43%;
+        }
+    </style>
+</head>
+<body id="body">
+
+
+    <div id="razmer">
+    <h2 id="vis_t">Высота</h2>
+    <input type="text" id="shirina">
+    <h2 id="shir_t">Ширина</h2>
+    <input type="text" id="visota">
+    
+</div>
+
+    <input type="button" value="start" id="start">
+
+    <div id="color_b">
+        <input type="button" id="red">
+        <input type="button" id="orangered">
+        <input type="button" id="orange">
+        <input type="button" id="yellow">
+        <input type="button" id="greenyellow">
+        <input type="button" id="yellowgreen">
+        <input type="button" id="green">
+        <input type="button" id="green_blue">
+        <input type="button" id="aqua">
+        <input type="button" id="blue">
+        <input type="button" id="dark_blue">
+        <input type="button" id="purple">
+        <input type="button" id="pink">
+        <input type="button" id="black">
+        <input type="button" id="white">
+        <input type="button" id="gray">
+        <input type="button" id="erase">
+    </div>
+
+    <table id="mytable">
+
+    </table>
+
+
+    <script>
+
+    var sound = document.createElement('audio');
+    sound.src = 'https://song.nazvonok.ru/song/e6c4/gioni-merry-christmas.mp3';
+
+
+
+        let color_px = 'red';
+
+    let selectedTd;
+
+    function red_c(){
+        color_px = 'red';
+        sound.src = 'https://song.nazvonok.ru/song/e6c4/gioni-merry-christmas.mp3';
+    }
+    red.addEventListener('click', red_c);
+
+    function ora_c(){
+        color_px = 'orange';
+        sound.src = 'https://song.nazvonok.ru/song/6408/garri-potter-volshebnoe-sms-melodiya-iz-izvestnogo-filma-vol.mp3';
+    }
+    orange.addEventListener('click', ora_c);
+
+    function orared_c(){
+        color_px = 'orangered';
+        sound.src = 'https://song.nazvonok.ru/song/08d0/orlinyy-klich-krik-letyaschego-orla.mp3';
+    }
+    orangered.addEventListener('click', orared_c);
+
+    function ye_c(){
+        color_px = 'yellow';
+        sound.src = 'https://song.nazvonok.ru/song/5219/sms-kolokolchiki-krasivyy-rington-sms.mp3';
+    }
+    yellow.addEventListener('click', ye_c);
+
+    function grye_c(){
+        color_px = 'greenyellow';
+        sound.src = 'https://song.nazvonok.ru/song/32dc/elektronnaya-ptica-veseloe-chirikane-s-elektricheskimi-notam.mp3';
+    }
+    greenyellow.addEventListener('click', grye_c);
+
+    function yegr_c(){
+        color_px = 'yellowgreen';
+        sound.src = 'https://song.nazvonok.ru/song/e863/chernaya-zhemchuzhina-sms-horoshiy-novyy-rington-na-sms.mp3';
+    }
+    yellowgreen.addEventListener('click', yegr_c);
+
+    function gr_c(){
+        color_px = 'green';
+        sound.src = 'https://song.nazvonok.ru/song/5fad/zagadochnaya-sms.mp3';
+    }
+    green.addEventListener('click', gr_c);
+
+    function grbl_c(){
+        color_px = 'lightgreen';
+        sound.src = 'https://song.nazvonok.ru/song/98ce/linkin-park-numb-3.mp3';
+    }
+    green_blue.addEventListener('click', grbl_c);
+
+    function aq_c(){
+        color_px = 'aqua';
+        sound.src = 'https://song.nazvonok.ru/song/3b3c/4-sec-zvonkiy-rington-na-sms.mp3';
+    }
+    aqua.addEventListener('click', aq_c);
+
+    function bl_c(){
+        color_px = 'blue';
+        sound.src = 'https://song.nazvonok.ru/song/4a77/5-sec-sms-korotenkiy-sms-rington.mp3';
+    }
+    blue.addEventListener('click', bl_c);
+
+    function drbl_c(){
+        color_px = 'darkblue';
+        sound.src = 'https://song.nazvonok.ru/song/6bcd/acdc-thunderstreak.mp3';
+    }
+    dark_blue.addEventListener('click', drbl_c);
+
+    function pur_c(){
+        color_px = 'purple';
+        sound.src = 'https://song.nazvonok.ru/song/e11e/soyka-peresmeshnica.mp3';
+    }
+    purple.addEventListener('click', pur_c);
+
+    function pink_c(){
+        color_px = 'pink';
+        sound.src = 'https://song.nazvonok.ru/song/a1fc/rammstein-sonne.mp3';
+    }
+    pink.addEventListener('click', pink_c);
+
+    function bla_c(){
+        color_px = 'black';
+        sound.src = 'https://song.nazvonok.ru/song/9397/na-sms-ku-5.mp3';
+    }
+    black.addEventListener('click', bla_c);
+
+    function wh_c(){
+        color_px = 'white';
+        sound.src = 'https://song.nazvonok.ru/song/1cc8/constantin-moscovici-airport-chisinau-gong.mp3'
+    }
+    white.addEventListener('click', wh_c);
+
+    function gray_c(){
+        color_px = 'gray';
+        sound.src = 'https://song.nazvonok.ru/song/334a/rammstein-du-hast-2.mp3';
+    }
+    gray.addEventListener('click', gray_c);
+
+    function erase_c(){
+        color_px = '';
+        sound.src = '';
+    }
+    erase.addEventListener('click', erase_c);
+
+
+
+
+
+
+
+        mytable.onclick = function(event) {
+        let target = event.target; // где был клик?
+
+        if (target.tagName != 'TD') return; // не на TD? тогда не интересует
+
+        draw(target); // подсветить TD
+        };
+
+        function createPX(){
+            let shir = document.getElementById('shirina').value;
+            let vis = document.getElementById('visota').value;
+            for(let i = 0; i != shir; i++){
+                let row_1 = document.createElement('tr');
+                for(let a = 0; a != vis; a++){
+                    let px_1 = document.createElement('td');
+                    row_1.appendChild(px_1);
+                }
+                mytable.appendChild(row_1);
+            }
+            
+        }
+
+        function draw(td){
+            td.style.background = color_px;
+            sound.play();
+        }
+        
+
+
+        start.addEventListener('click', createPX);
+
+
+    </script>
+    
+</body>
+</html>
